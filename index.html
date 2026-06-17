@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Toko Muria Barokah - Pusat Oleh-Oleh & Mainan Anak</title>
+  <title>Muria Barokah - Pusat Oleh-Oleh & Mainan Anak</title>
   <link rel="icon" type="image/webp" href="./assets/favicon.webp">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -46,7 +46,7 @@
     .brand-text span { font-family: 'Quicksand', sans-serif; font-size: 0.8rem; font-weight: 700; letter-spacing: 2px; display: block; margin-top: 2px; }
     .nav-menu { margin-left: auto; display: flex; gap: 42px; }
     .nav-menu a, .mobile-menu a { text-decoration: none; font-size: 1rem; font-weight: 600; }
-    .menu-btn { display: none; background: none; border: none; color: var(--text-dark); font-size: 2rem; cursor: pointer; }
+    .menu-btn { background: none; border: none; color: var(--text-dark); font-size: 2rem; cursor: pointer; display: none; }
     .navbar:not(.scrolled) .menu-btn { color: white; }
     .hero {position: relative; min-height: 100vh; display: flex; align-items: center; justify-content: center; overflow: hidden; background: url("./assets/noimage.webp") center/cover no-repeat;}
     #heroSlides { position: absolute; inset: 0; z-index: 0; }
@@ -59,16 +59,13 @@
     .hero-content p { margin-top: 24px; font-size: 1.15rem; line-height: 1.7; max-width: 700px; color: #fff7ed; font-weight: 500; }
     .btn-product { width: 420px; height: 72px; margin-top: 50px; border: 1px solid var(--gold); background: var(--gold); color: white; font-size: 1.1rem; font-weight: 700; letter-spacing: 0.5px; }
     .btn-product:hover { background: #a14a10; border-color: #a14a10; }
-    
-    /* Perbaikan bagian About CSS untuk Efek Wrap Text */
     .about { display: block; max-width: 1200px; width: 90%; margin: 120px auto; }
     .about-content { max-width: none; }
-    .about-content::after { content: ""; display: table; clear: both; } /* Mencegah masalah float */
+    .about-content::after { content: ""; display: table; clear: both; } 
     .about-image { float: left; width: 420px; aspect-ratio: 1.414 / 1; overflow: hidden; border-radius: 24px; box-shadow: 0 20px 40px rgba(0,0,0,0.02); margin-right: 40px; margin-bottom: 20px; margin-top: 15px; }
     .about-image img { width: 100%; height: 100%; object-fit: cover; display: block; }
     .about-title { display: block; }
-    .about-description { display: contents; } /* Membuat paragraf mengalir menyatu dengan judul */
-    
+    .about-description { display: contents; }
     .feature-card, .product-card, .testimonial-card, .info-box, .contact-card {background: var(--card-bg) !important; border: 1px solid rgba(194, 94, 26, 0.12) !important; box-shadow: var(--card-shadow) !important;}
     .about-features { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; padding-top: 40px; clear: both; }
     .feature-card { padding: 28px; border-radius: 24px; }
@@ -79,7 +76,7 @@
     .product-card:hover { transform: translateY(-6px); border-color: rgba(194, 94, 26, 0.4) !important; box-shadow: 0 20px 45px rgba(194, 94, 26, 0.12) !important; }
     .product-image { position: relative; aspect-ratio: 1.414 / 1; overflow: hidden; }
     .product-image img { width: 100%; height: 100%; object-fit: cover; display: block; }
-    .product-category { position: absolute; top: 16px; left: 16px; background: rgba(255,255,255,0.94); backdrop-filter: blur(8px); color: var(--gold); padding: 6px 14px; border-radius: 99px; font-size: 0.8rem; letter-spacing: 0.5px; text-transform: uppercase; border: 1px solid rgba(194, 94, 26, 0.15); font-weight: 700; font-family: 'Quicksand', sans-serif; }
+    .product-category { position: absolute; top: 16px; left: 16px; background: rgba(255,255,255,0.94); backdrop-filter: blur(8px); color: var(--gold); padding: 6px 14px; border-radius: 9px; font-size: 0.8rem; letter-spacing: 0.5px; text-transform: uppercase; border: 1px solid rgba(194, 94, 26, 0.15); font-weight: 700; font-family: 'Quicksand', sans-serif; }
     .product-content { padding: 24px; display: flex; flex-direction: column; flex-grow: 1; }
     .product-content h3 { font-size: 1.5rem; margin-bottom: 10px; color: var(--text-dark); font-weight: 700; }
     .product-content p { font-size: 0.95rem; line-height: 1.6; color: var(--text-muted); margin-bottom: 24px; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
@@ -133,8 +130,8 @@
     .footer-brand h3 { font-size: 1.6rem; font-weight: 700; color: white; line-height: 1.2; }
     .footer-brand span { font-family: 'Quicksand', sans-serif; font-size: 0.8rem; font-weight: 700; letter-spacing: 2px; display: block; margin-top: 2px; color: #f59e0b; }
     .footer p { margin-top: 24px; color: #dfd5d5; line-height: 1.8; }
-    .footer h4 { color: #f59e0b; letter-spacing: 3px; margin-bottom: 25px; font-size: 0.9rem; font-family: 'Quicksand', sans-serif; font-weight: 700; }
     .footer ul { list-style: none; padding: 0; }
+    .footer h4 { color: #f59e0b; letter-spacing: 3px; margin-bottom: 25px; font-size: 0.9rem; font-family: 'Quicksand', sans-serif; font-weight: 700; }
     .footer li { margin-bottom: 16px; }
     .footer a { color: #bfaeae; text-decoration: none; }
     .footer a:hover { color: #f59e0b; }
@@ -144,13 +141,13 @@
     .footer-bottom a { color: #8a7a7a; text-decoration: none; transition: .3s; }
     .footer-bottom a:hover { color: #f59e0b; }
     .floating-wa { position: fixed; right: 25px; bottom: 25px; width: 72px; height: 72px; background: var(--wa-green); border-radius: 50%; display: flex; justify-content: center; align-items: center; z-index: 999; box-shadow: 0 10px 30px rgba(37, 211, 102, 0.4); transition: 0.3s; }
-    .floating-wa:hover { transform: scale(1.05); background: var(--wa-green-hover); }
     .floating-wa img { width: 40px; height: 40px; filter: brightness(0) invert(1); }
     .mobile-menu { display: none; }
-    
     @media(max-width:1200px){ .product-grid { grid-template-columns: repeat(2, 1fr); } }
-    @media(max-width:992px){
-      /* Responsif untuk tampilan mobile agar gambar kembali ke atas teks */
+    @media(max-width:768px){
+      .navbar {padding: 0 24px; display: flex; justify-content: space-between; align-items: center;}
+      .nav-menu { display: none; }
+      .menu-btn { display: block; margin-left: 0; }
       .about-image { float: none; width: 100%; max-width: 500px; margin: 20px auto; }
       .about-features { grid-template-columns: 1fr; }
       .location-content, .faq-section, .footer-grid { grid-template-columns: 1fr; }
@@ -159,23 +156,20 @@
       .location-map iframe { height: 450px; }
       .faq-section, .footer-grid { gap: 40px; }
       .contact-grid { grid-template-columns: 1fr; }
-      .footer-bottom { flex-direction: column; gap: 20px; }}
-    @media(max-width:768px){
-      .nav-menu { display: none; }
-      .menu-btn { display: block; margin-left: auto; }
+      .footer-bottom { flex-direction: column; gap: 20px; }
       .mobile-menu.active { display: flex; flex-direction: column; position: fixed; top: 100px; left: 0; width: 100%; background: rgba(255, 255, 255, 0.98); padding: 20px; gap: 20px; z-index: 999; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
       .mobile-menu a { font-size: 1.1rem; color: var(--text-dark); }
       .hero-content h1 { font-size: 2.8rem; }
       .hero-content { text-align: center; }
       .btn-product { width: 100%; }
-      .product-grid { grid-template-columns: 1fr; }
       .testimonial-wrapper { flex-wrap: wrap; gap: 20px; }
       #prevTestimonial { order: 2; }
       #nextTestimonial { order: 3; }
       #testimonialContent { order: 1; }
       .testimonial-card { padding: 24px; }
       .testimonial-text { font-size: 1.2rem; }
-      .faq-question { font-size: 1.1rem; padding: 20px 0; }}
+      .faq-question { font-size: 1.1rem; padding: 20px 0; }
+    }
     @media(max-width:640px){ .gallery-grid { grid-template-columns: 1fr; } }
   </style>
 </head>
@@ -207,34 +201,27 @@
       <a href="#produk" class="btn-product">Lihat Produk</a>
     </div>
   </section>
-  
   <section id="about" class="about">
     <div class="about-content">
       <div class="about-title">
         <span class="section-label">TENTANG KAMI</span>
         <h2>Toko Muria Barokah</h2>
-        
-        <!-- Gambar disatukan di sini agar teks bisa mengalir melingkupinya -->
         <div class="about-image">
           <img src="./assets/noimage.webp" alt="Tentang Kami">
         </div>
-        
         <p>Toko Muria Barokah merupakan pusat oleh oleh yang berada di kawasan wisata religi Sunan Muria, Desa Colo, Kabupaten Kudus. Sejak awal berdiri, kami berkomitmen menyediakan berbagai pilihan makanan khas, oleh-oleh, dan mainan anak untuk melengkapi cerita perjalanan para peziarah maupun wisatawan yang berkunjung ke lereng Gunung Muria.</p>
         <p>Berada di jalur utama menuju kawasan wisata Sunan Muria membuat kami setiap hari bertemu dengan pengunjung dari berbagai daerah. Karena itu, kami berusaha menghadirkan produk yang tidak hanya berkualitas, tetapi juga mencerminkan kekayaan budaya dan kearifan lokal masyarakat sekitar.</p>
-        
         <p>Setiap produk yang tersedia dipilih dengan teliti agar pelanggan mendapatkan pilihan terbaik dengan harga yang wajar. Kami juga mendukung pelaku usaha lokal dengan menyediakan berbagai produk UMKM yang dibuat oleh masyarakat sekitar Muria dan Kabupaten Kudus.</p>
         <p>Bagi kami, sebuah oleh-oleh bukan hanya barang yang dibawa pulang. Di dalamnya terdapat kenangan perjalanan, cerita keluarga, dan pengalaman berharga selama berkunjung ke kawasan Muria. Karena itulah kami selalu berusaha memberikan pelayanan yang ramah, jujur, dan membantu setiap pelanggan menemukan produk yang sesuai dengan kebutuhan mereka.</p>
         <p>Terima kasih telah mempercayakan kebutuhan oleh-oleh Anda kepada Toko Muria Barokah. Semoga setiap kunjungan menjadi pengalaman yang menyenangkan dan setiap produk yang dibawa pulang dapat menjadi pengingat indah tentang Muria.</p>
       </div>
     </div>
-    
     <div class="about-features">
       <div class="feature-card"><h4>Produk Terbaru</h4><p>Perputaran barang cepat, semua produk camilan dan mainan berasal dari pasokan terbaru.</p></div>
       <div class="feature-card"><h4>Kualitas Terjaga</h4><p>Diseleksi sebelum sampai ke tangan Anda.</p></div>
-      <div class="feature-card"><h4>Pelayanan Warm</h4><p>Disambut layaknya keluarga sendiri.</p></div>
+      <div class="feature-card"><h4>Pelayanan Hangat</h4><p>Disambut layaknya keluarga sendiri.</p></div>
     </div>
   </section>
-  
   <section id="produk" class="products-section">
     <div class="section-header">
       <div class="overline">PRODUK PILIHAN</div>
@@ -260,9 +247,9 @@
       <h2>Cerita dari mereka yang sudah <span>mampir</span>.</h2>
     </div>
     <div class="testimonial-wrapper">
-      <button id="prevTestimonial" class="nav-btn">&lt;</button>
+      <button id="prevTestimonial" class="nav-btn"><</button>
       <div id="testimonialContent"><p style="text-align: center; color: #a0a0a0;">Memuat testimoni...</p></div>
-      <button id="nextTestimonial" class="nav-btn">&gt;</button>
+      <button id="nextTestimonial" class="nav-btn">></button>
     </div>
   </section>
   <section id="lokasi" class="location-section">
@@ -279,12 +266,12 @@
           <div><span>JAM BUKA</span><h4>Setiap Hari, 06.00 – 22.00 WIB</h4></div>
         </div>
         <div class="location-buttons">
-          <a href="https://maps.google.com" target="_blank" class="btn-secondary">Buka di Google Maps</a>
+          <a href="http://maps.google.com" target="_blank" class="btn-secondary">Buka di Google Maps</a>
         </div>
       </div>
-      <a href="https://maps.google.com" target="_blank" class="location-map">
+      <a href="http://maps.google.com" target="_blank" class="location-map">
         <div class="map-overlay"></div>
-        <iframe src="https://www.google.com/maps?q=-6.667947,110.9025424&hl=id&z=17&output=embed" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="about:blank" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe>
       </a>
     </div>
   </section>
@@ -322,7 +309,7 @@
         <h4>TAUTAN CEPAT</h4>
         <ul>
           <li><a href="#about">Tentang</a></li><li><a href="#produk">Produk</a></li><li><a href="#gallery">Galeri</a></li>
-          <li><a href="#lokasi">Lokasi</a></li><li><a href="#faq">FAQ</a></li><li><a href="#kontak">Kontak</a></li>
+          <li><a href="#lokasi">Location</a></li><li><a href="#faq">FAQ</a></li><li><a href="#kontak">Kontak</a></li>
         </ul>
       </div>
       <div>
@@ -337,7 +324,7 @@
     </div>
     <div class="footer-bottom">
       <span>© 2026 Toko Muria Barokah. Seluruh hak cipta dilindungi.</span>
-      <span><a href="https://www.instagram.com/muriawebstudio">Designed & Developed by Muria Web Studio</a></span>
+      <span><a href="#">Designed & Developed by Muria Web Studio</a></span>
     </div>
   </footer>
   <a href="https://wa.me/6281326242174" class="floating-wa" target="_blank"><img src="./assets/wa.svg" alt="WhatsApp"></a>
@@ -403,6 +390,7 @@
       `).join('');
       const slides = container.querySelectorAll('.hero-slide');
       if(slides.length <= 1) return;
+      
       setInterval(() => {
         slides[heroIndex].classList.remove('active');
         heroIndex = (heroIndex + 1) % slides.length;
@@ -413,7 +401,7 @@
       if (!testimonials.length) return;
       const t = testimonials[idx];
       document.getElementById("testimonialContent").innerHTML = `
-        <a href="${t.link || 'https://maps.google.com'}" target="_blank" class="testimonial-card">
+        <a href="${t.link || 'http://maps.google.com'}" target="_blank" class="testimonial-card">
           <div class="testimonial-text">"${t.comment}"</div>
           <div class="testimonial-footer">
             <div class="avatar">${t.name.charAt(0).toUpperCase()}</div>
